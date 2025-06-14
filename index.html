@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>product list</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="container-product">
+            <h1>Desserts</h1>
+        <div class="product-list" id="product-list"></div>
+       
+    </div>
+     <div class="cart">
+            <h2 class="cart-title"></h2>
+             <div id="empty-cart" class="empty-cart">
+              
+                <img src="images/illustration-empty-cart.svg" alt="Empty Cart" />
+                <p>Your added items will appear here</p>
+             </div>
+             <div class="cartitem">
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total">$0.00</span></p>
+            <p class="carbon"><img src="/images/icon-carbon-neutral.svg" alt="carbon-neutral"> This is a carbon neutral delivery.</p>
+            <button id="confirm-btn">Confirm Order</button>
+            </div>
+        </div>
+        <div id="overlay"  class="hidden">
+            <div class="model">
+                <div class="success-icon">
+                    <img src="images/icon-order-confirmed.svg" alt="order-confirmed">
+                </div>
+                <h2>Order Confirmed</h2>
+                <p>we hope you enjoy your food!</p>
+                <ul id="confirmed-items"></ul>
+                <p class="total"><strong>Order Total: </strong><span id="confirmed-total">$0.00</span></p>
+                <button id="start-new-order" class="start-order-btn">Start New Order</button>
+            </div>
+        </div>
+
+    
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
